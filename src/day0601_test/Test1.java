@@ -35,5 +35,31 @@ public class Test1 {
 		int [] b = {12,3,46,7,54,};
 		System.arraycopy(a, 2, b, 2, 3);
 		System.out.println(Arrays.toString(b));
+		
+	/*二.多维数组*/
+		//二维
+		int [][] aa = {{1,1,1},
+		               {2,2,2},
+		               {3,3,3},
+		               {4,4,4}};
+		for(int l=0;l<aa.length;l++) {
+			for(int n=0;n<aa[l].length;n++) {
+				System.out.print(aa[l][n]+" ");
+			}
+			System.out.println();
+		}
+		//多维
+		int [][][] bb= new int[2][3][4];
+		for(int l=0;l<bb.length;l++) {
+			for(int n=0;n<bb[l].length;n++) {
+				for(int m=0;m<bb[l][n].length;m++) {
+					bb[l][n][m]=(int)(Math.random()*100);
+					System.out.print(bb[l][n][m]+" ");
+				}
+				System.out.println();
+			}
+			System.out.println();
+		}
+		
 	}
 }
